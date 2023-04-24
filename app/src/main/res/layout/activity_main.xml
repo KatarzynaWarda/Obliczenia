@@ -50,12 +50,12 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/btnExchange"
+                android:id="@+id/btnPalindorm"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
-                android:text="💰"
+                android:text="📖"
                 android:textSize="60sp"
                 app:layout_constraintStart_toEndOf="@+id/bmi"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -76,7 +76,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:text="√Δ"
-                android:textColor="#F1BB1A"
+                android:textColor="@color/design_default_color_error"
                 android:textSize="60sp"
                 app:layout_constraintStart_toEndOf="@+id/temp"
                 app:layout_constraintTop_toTopOf="parent" />

@@ -40,6 +40,16 @@ public class Temperature extends AppCompatActivity {
                 startActivity(intencja);
             }
         });
+
+        Button palindrom = findViewById(R.id.btnPalindrom);
+        palindrom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intencja = new Intent(Temperature.this, Palindrom.class);
+                startActivity(intencja);
+            }
+        });
+
         String[] temp = {"°C", "°F", "K"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, temp);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

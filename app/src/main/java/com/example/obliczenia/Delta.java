@@ -43,6 +43,15 @@ public class Delta extends AppCompatActivity {
                 wyznaczPierwiastki();
             }
         });
+
+        Button palindrom = findViewById(R.id.btnPalindrom);
+        palindrom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intencja = new Intent(Delta.this, Palindrom.class);
+                startActivity(intencja);
+            }
+        });
     }
 
     private void wyznaczPierwiastki() {

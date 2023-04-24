@@ -40,7 +40,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intencja);
             }
         });
+
+        Button palindrom = findViewById(R.id.btnPalindorm);
+        palindrom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intencja = new Intent(MainActivity.this, Palindrom.class);
+                startActivity(intencja);
+            }
+        });
     }
-
-
 }

@@ -44,6 +44,15 @@ public class BMI extends AppCompatActivity {
                 obliczBMI();
             }
         });
+
+        Button palindrom = findViewById(R.id.btnPalindrom);
+        palindrom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intencja = new Intent(BMI.this, Palindrom.class);
+                startActivity(intencja);
+            }
+        });
     }
 
     public void obliczBMI() {

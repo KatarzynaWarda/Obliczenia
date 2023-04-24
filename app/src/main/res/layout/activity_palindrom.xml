@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Temperature">
+    tools:context=".Palindrom">
 
     <TextView
         android:id="@+id/desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="Temperature"
+        android:layout_marginTop="80dp"
+        android:text="Palindrom"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25sp"
@@ -74,66 +74,40 @@
             app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
 
-    <Spinner
-        android:id="@+id/spSelected"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="164dp"
-        android:scrollbarSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <Spinner
-        android:id="@+id/spChanged"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:scrollbarSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spSelected" />
-
     <EditText
-
-        android:id="@+id/etSelected"
+        android:id="@+id/slowo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
-        android:layout_marginEnd="16dp"
-        android:textSize="30sp"
-        android:hint="0"
-        android:textColorHint="@color/design_default_color_error"
-        android:textCursorDrawable="@null"
-        android:background="@android:color/transparent"
-        android:inputType="numberDecimal"
+        android:layout_marginTop="140dp"
+        android:hint="Wpisz słowo do sprawdzenia"
+        android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvChanged"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
-        android:textSize="30sp"
-        android:textCursorDrawable="@null"
-        android:background="@android:color/transparent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSelected" />
-
-    <Button
-        android:id="@+id/btnWyznacz"
+        android:id="@+id/wyswietl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/slowo"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btnSprawdz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:background="@drawable/round_button"
-        android:text="Wymień"
-        android:textColor="@color/white"
+        android:text="Sprawdź"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spChanged" />
+        app:layout_constraintTop_toBottomOf="@+id/wyswietl" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
